@@ -433,6 +433,14 @@ h1 {
     margin-left: 40px;
   }
 }
+@media (max-width:1150px) {
+  .swiper-button-next::after {
+    color: #ffffff;
+  }
+  .swiper-button-prev::after {
+    color: #ffffff;
+  }
+}
 @media(max-width:900px){
   .swiper-button-next::after {
     margin-right: 20px !important;
