@@ -252,10 +252,14 @@ h1 {
 
 .news-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr !important;
   gap: 60px;
   padding-top: 50px;
   align-items: center;
+}
+.new-content-img {
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 .new-content-img img {
   max-width: 100%;
@@ -721,7 +725,7 @@ h1 {
 
 .news-content {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   gap: 50px;
 
@@ -738,7 +742,6 @@ h1 {
   flex-direction: column;
   gap: 18px;
   text-align: left;
-  max-width: 550px;
 }
 
 .news-info-title {
@@ -755,7 +758,7 @@ h1 {
 
 .new-content-img img {
   width: 100%;
-  max-width: 480px;
+  max-width: 280px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
@@ -853,6 +856,11 @@ h1 {
   background-position: top;
   background-size: cover;
 }
+.team-photo-adv.photo-3 {
+  background: url('img/iulian-img.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .team-photo-adv.large {
   background: url('img/me.jpg') no-repeat;
   background-position: top;
@@ -885,10 +893,10 @@ h1 {
 }
 
   .team-grid-advanced .part:nth-child(1):hover {
-    background: linear-gradient(to right, #177717 0%, #458945 100%);
+    background: linear-gradient(to right, #579357 0%, #67aa67 100%);
   }
   .team-grid-advanced .part:nth-child(2):hover {
-    background: linear-gradient(to right, #458945 0%, #f2f2f2 100%);
+    background: linear-gradient(to right, #67aa67 0%, #f2f2f2 100%);
   }
   .team-grid-advanced .part:nth-child(3):hover {
     background: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 100%);
@@ -897,22 +905,20 @@ h1 {
     background: linear-gradient(to right, #f2f2f2 0%, #b05757 100%);
   }
   .team-grid-advanced .part:nth-child(5):hover {
-    background: linear-gradient(to right, #b05757 0%, #bc3030 100%);
+    background: linear-gradient(to right, #b05757 0%, #d94747 100%);
   }
 
 /* ——— Адаптив ——— */
 
 @media (max-width: 1100px) {
   .team-grid-advanced {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .team-card-adv.big {
-    grid-column: span 3;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    flex-wrap: nowrap;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .team-grid-advanced .part:nth-child(1):hover {
     background: linear-gradient(to bottom, #177717 0%, #458945 100%);
   }
@@ -933,13 +939,13 @@ h1 {
   }
   .team-photo-adv {
     width: 100%;
-    height: 260px;
+    height: 360px;
     background: #dcdcdc;
     border-radius: 12px;
     margin-bottom: 15px;
   }
   .team-photo-adv.large {
-    height: 300px;
+    height: 360px;
   }
   .team-card-adv.big {
     transform: scale(1);
@@ -951,6 +957,12 @@ h1 {
   .team-card-adv.big {
     grid-column: span 1;
     transform: scale(1);
+  }
+}
+@media (max-width:500px) {
+  
+  .team-photo-adv {
+    height: 320px;
   }
 }
 
