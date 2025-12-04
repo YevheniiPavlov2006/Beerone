@@ -144,12 +144,7 @@ a {
   }
 }
 @media (max-width:500px){
-  .main-man {
-    
-  }
-  .main-text {
-    
-  }
+
 }
 @media (max-width:340px){
   .main-man {
@@ -1015,7 +1010,7 @@ h1 {
 
 
 .section-logos {
-  padding-top: 50px;
+  padding-top: 80px;
 }
 .logos-content {
   display: grid;
