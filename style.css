@@ -856,6 +856,11 @@ h1 {
   background-position: top;
   background-size: cover;
 }
+.team-photo-adv.photo-5 {
+  background: url('img/eduard.jpg') no-repeat;
+  background-position: top;
+  background-size: cover;
+}
 .team-photo-adv.photo-3 {
   background: url('img/iulian-img.jpg') no-repeat;
   background-position: center;
